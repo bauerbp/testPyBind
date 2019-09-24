@@ -5,12 +5,13 @@
     <ProjectGuid>4be7ac08-db44-4cda-b929-537051e5b6b6</ProjectGuid>
     <ProjectHome>.</ProjectHome>
     <StartupFile>pYTHONAPP.py</StartupFile>
-    <SearchPath>
-    </SearchPath>
+    <SearchPath>C:\Users\Brian\AppData\Local\Programs\Python\Python37-32\Lib\site-packages\PyPDF4</SearchPath>
     <WorkingDirectory>.</WorkingDirectory>
     <OutputPath>.</OutputPath>
     <Name>pYTHONAPP</Name>
     <RootNamespace>pYTHONAPP</RootNamespace>
+    <LaunchProvider>Standard Python launcher</LaunchProvider>
+    <EnableNativeCodeDebugging>False</EnableNativeCodeDebugging>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
     <DebugSymbols>true</DebugSymbols>
@@ -21,6 +22,9 @@
     <EnableUnmanagedDebugging>false</EnableUnmanagedDebugging>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="module1.py">
+      <SubType>Code</SubType>
+    </Compile>
     <Compile Include="pYTHONAPP.py" />
   </ItemGroup>
   <ItemGroup>

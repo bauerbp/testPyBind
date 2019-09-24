@@ -2,6 +2,7 @@
 from itertools import islice
 from random import random
 from time import perf_counter
+import module1
 
 COUNT = 500000  # Change this value depending on the speed of your computer
 DATA = list(islice(iter(lambda: (random() - 0.5) * 3.0, None), COUNT))
@@ -28,9 +29,13 @@ def test(fn, name):
         assert -1 <= d <= 1, " incorrect values"
 
 if __name__ == "__main__":
-    print('Running benchmarks with COUNT = {}'.format(COUNT))
+    #print('Running benchmarks with COUNT = {}'.format(COUNT))
 
-    test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d] (Python implementation)')
+    #test(lambda d: [tanh(x) for x in d], '[tanh(x) for x in d] (Python implementation)')
 
-    from hyperCode import fast_tanh2
-test(lambda d: [fast_tanh2(x) for x in d], '[fast_tanh2(x) for x in d] (CPython C++ extension)')
+    #from hyperCode import fast_tanh2
+    #"BridgewaterLease.pdf"
+    #module1.summarizePDF()
+    module1.summarizePDF_debugging()
+
+#test(lambda d: [fast_tanh2(x) for x in d], '[fast_tanh2(x) for x in d] (CPython C++ extension)')
